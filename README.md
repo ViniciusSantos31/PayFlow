@@ -1,6 +1,6 @@
 # payflow
 
-![image]("https://drive.google.com/file/d/1saJFP4OT3PTXm6HP7CJZc1avJ5hAoMn4/preview")
+![image](https://drive.google.com/uc?export=view&id=1saJFP4OT3PTXm6HP7CJZc1avJ5hAoMn4)
 
 Projeto desenvolvido durante a NLW#Together que foi realizada entre os dias 20 e 27/06
 
