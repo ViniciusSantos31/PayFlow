@@ -10,6 +10,7 @@ Neste projeto foi utlizada a linguagem Dart <img height="20" src="https://raw.gi
 
 
 <div borderRadius="10px"><img src="/assets/images/app.png" alt="app" /></div>
+** Screenshots feitas do app já desenvolvido.
 
 
 
