@@ -1,6 +1,6 @@
 <div align="center"><img src="/assets/images/logofull.png" alt="logo" /></div>
 
-<div style={{borderRadius: '10px'}}><img src="/assets/images/app.png" alt="app" /></div>
+<div borderRadius="10px"><img src="/assets/images/app.png" alt="app" /></div>
 
 Projeto desenvolvido durante a NLW#Together que foi realizada entre os dias 20 e 27/06
 
