@@ -1,4 +1,4 @@
-# payflow
+# <img src="/assets/images/logo.png" alt="logo" />
 
 <img src="/assets/images/app.png" alt="app" />
 
