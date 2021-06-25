@@ -1,16 +1,10 @@
 # payflow
 
-A new Flutter project.
+Projeto desenvolvido durante a NLW#Together que foi realizada entre os dias 20 e 27/06
 
-## Getting Started
+O PayFlow consiste em um organizador de boletos simples e sofisticado que conta com machine learning para a leitura do código de barras e também foi usado a funcionalidade do login social que facilita a utilização do usuário e a implementação do Dev.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- [Rocketseat: NLW#Together](https://nextlevelweek.com/episodios/flutter/live-1/edicao/6)
+- [Linkedin: Vinicius Santos](https://www.linkedin.com/in/viniciussantos31/)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
