@@ -1,4 +1,4 @@
-# <img src="/assets/images/logo.png" alt="logo" />
+# <img src="/assets/images/logofull.png" alt="logo" />
 
 <img src="/assets/images/app.png" alt="app" />
 
