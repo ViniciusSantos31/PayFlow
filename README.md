@@ -1,4 +1,4 @@
-<div style={{display: flex, alignItens: center, justifyContent: center, width: '100%'}}><img src="/assets/images/logofull.png" alt="logo" /></div>
+<div style={{display: flex, alignItens: center, justifyContent: center, width: '1000px'}}><img src="/assets/images/logofull.png" alt="logo" /></div>
 
 <img src="/assets/images/app.png" alt="app" />
 
