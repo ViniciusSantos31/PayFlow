@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:payflow/modules/extractPage/exrtact_page.dart';
 import 'package:payflow/modules/home/home_controller.dart';
+import 'package:payflow/modules/login/login_controller.dart';
 import 'package:payflow/modules/meusBoletos/meusBoletos_page.dart';
+import 'package:payflow/shared/auth/auth_controller.dart';
+import 'package:payflow/shared/bottomSheet/bottomSheet_widget.dart';
 import 'package:payflow/shared/models/user_model.dart';
 import 'package:payflow/shared/themes/appTextStyles.dart';
 import 'package:payflow/shared/themes/appcolors.dart';
@@ -16,6 +19,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final homeController = HomeController();
+  final loginController = LoginController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,15 +44,20 @@ class _HomePageState extends State<HomePage> {
               ),
               subtitle: Text("Mantenha suas contas em dia",
                   style: TextStyles.captionShape),
-              trailing: Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(5),
-                    image: DecorationImage(
-                      image: NetworkImage(widget.user.photoURL!),
-                    )),
+              trailing: GestureDetector(
+                onTap: () {
+                  _showModalBottom(context);
+                },
+                child: Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(5),
+                      image: DecorationImage(
+                        image: NetworkImage(widget.user.photoURL!),
+                      )),
+                ),
               ),
             ),
           ),
@@ -117,4 +127,26 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+}
+
+void _showModalBottom(BuildContext context) {
+  final loginController = LoginController();
+
+  showModalBottomSheet(
+      context: context,
+      builder: (context) {
+        return BottomSheetWidget(
+          rotate: false,
+          title: 'Você deseja sair?',
+          subtitle: '',
+          primaryLabel: 'Não, cancelar',
+          primaryOnPressed: () {
+            Navigator.pop(context);
+          },
+          secundaryLabel: 'Sim, sair',
+          secundaryOnPressed: () {
+            loginController.googleSignOUt(context);
+          },
+        );
+      });
 }

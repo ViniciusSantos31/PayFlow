@@ -1,5 +1,6 @@
 import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
+import 'package:payflow/shared/bottomSheet/bottomSheet_widget.dart';
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:payflow/shared/themes/appTextStyles.dart';
 import 'package:payflow/shared/themes/appcolors.dart';

@@ -10,6 +10,7 @@ class BottomSheetWidget extends StatelessWidget {
   final String secundaryLabel;
   final VoidCallback primaryOnPressed;
   final VoidCallback secundaryOnPressed;
+  final bool rotate;
   const BottomSheetWidget(
       {Key? key,
       required this.primaryLabel,
@@ -17,7 +18,8 @@ class BottomSheetWidget extends StatelessWidget {
       required this.primaryOnPressed,
       required this.secundaryOnPressed,
       required this.title,
-      required this.subtitle})
+      required this.subtitle,
+      this.rotate = true})
       : super(key: key);
 
   @override
@@ -28,15 +30,18 @@ class BottomSheetWidget extends StatelessWidget {
       // left: true,
       // right: true,
       child: RotatedBox(
-        quarterTurns: 1,
+        quarterTurns: rotate ? 1 : 0,
         child: Material(
           child: Container(
+            height: !rotate ? 200 : null,
             color: AppColors.shape,
             child: Column(
               children: [
                 Expanded(
                     child: Container(
-                  color: Colors.black.withOpacity(0.6),
+                  color: rotate
+                      ? Colors.black.withOpacity(0.6)
+                      : Colors.transparent,
                 )),
                 Column(
                   children: [

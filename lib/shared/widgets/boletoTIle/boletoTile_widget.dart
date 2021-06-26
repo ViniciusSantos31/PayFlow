@@ -25,12 +25,15 @@ class BoletoTileWidget extends StatelessWidget {
           "Vence em ${data.dueDate}",
           style: TextStyles.captionBody,
         ),
-        trailing: Text.rich(TextSpan(
+        trailing: Text.rich(
+          TextSpan(
             text: "R\$",
             style: TextStyles.trailingRegular,
             children: [
               TextSpan(text: "${data.value}", style: TextStyles.trailingBold)
-            ])),
+            ],
+          ),
+        ),
       ),
     );
   }
