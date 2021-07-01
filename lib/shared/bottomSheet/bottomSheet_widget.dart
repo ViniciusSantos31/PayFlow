@@ -53,7 +53,7 @@ class BottomSheetWidget extends StatelessWidget {
                           style: TextStyles.buttonBoldHeading,
                           children: [
                             TextSpan(
-                                text: "\n$subtitle",
+                                text: "\n$subtitle aqui",
                                 style: TextStyles.buttonHeading)
                           ],
                         ),
